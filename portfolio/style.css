@@ -202,9 +202,6 @@ header {
 .p2-section3 span {
   color: blueviolet;
 }
-.section-3-left img {
-  /* padding-left: 720px; */
-}
 .section-3 {
   display: flex;
   margin: 0 30px;
