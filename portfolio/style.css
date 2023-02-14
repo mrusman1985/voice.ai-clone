@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: white;
+  background-color: black;
+  overflow-x: hidden;
+}
+header {
+  display: flex;
+
+  list-style-type: none;
+
+  justify-content: space-between;
+  color: white;
+  background-color: black;
+}
+.nav-section {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  margin: 0 80px;
+}
+.nav-section li {
+  margin: 0 20px;
+}
+.hero {
+  height: 100vh;
+  overflow: hidden;
+  width: 100vw;
+}
+.container {
+  position: relative;
+}
+
+#img2 {
+  position: absolute;
+  left: 100px;
+  top: 400px;
+  height: 300px;
+}
+#img3 {
+  position: absolute;
+  right: 100px;
+  top: 400px;
+  height: 300px;
+}
+.img-1 {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+}
+.text-block {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: inherit;
+}
+.text-block h1 {
+  font-size: 80px;
+}
+.text-block h3 {
+  font-size: 40px;
+  margin: 30px 0;
+}
+.download-btn {
+  padding: 20px 80px;
+  font-size: 30px;
+  border-radius: 10px;
+  color: white;
+  animation-name: buttonaimation;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  background-color: #8a2be2;
+  animation-timing-function: ease-in-out;
+  z-index: 1;
+}
+.voice-changer-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.voice-changer-right {
+}
+
+@keyframes buttonaimation {
+  0% {
+    padding: 20px 80px;
+  }
+  50% {
+    padding: 40px 130px;
+  }
+
+  100% {
+    padding: 20px 80px;
+  }
+}
+.voice-changer-left {
+  z-index: 100;
+}
+.voice-changer-left img {
+  height: 750px;
+  width: 750px;
+  object-fit: contain;
+  z-index: 100;
+}
+.voice-changer-heading {
+  font-size: 50px;
+  margin-right: 30px;
+  width: 80%;
+}
+.special {
+  color: purple;
+}
+.voice-changer-para {
+  margin-top: 90px;
+  font-size: 26px;
+  width: 80%;
+  text-align: justify;
+}
+@media only screen and (max-width: 768px) {
+  .nav-section {
+    display: none;
+  }
+  .nav-bar li {
+    display: none;
+  }
+  .wave-container {
+    display: none;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  .voice-changer-heading {
+    width: 95%;
+  }
+  .voice-changer-para {
+    width: 95%;
+  }
+  .voice-changer-left img {
+    height: 350px;
+    width: 350px;
+  }
+  button {
+    font-size: 18px;
+  }
+  .voice-changer-section {
+    flex-wrap: wrap;
+  }
+  .section-3-right {
+    height: 100vh;
+    width: 100% !important;
+  }
+  .section-3-left img {
+    width: 100%;
+  }
+  @keyframes buttonaimation {
+    0% {
+      padding: 10px 50px;
+    }
+    50% {
+      padding: 20px 70px;
+    }
+
+    100% {
+      padding: 10px 50px;
+    }
+  }
+}
+@media only screen and (max-width: 480px) {
+}
+.section-3-right {
+  height: 100vh;
+  width: 50%;
+  /* padding-top: 20px;
+  padding-left: 20px; */
+}
+.heading-section3 {
+  font-size: 35px;
+}
+.heading-section3 span {
+  color: blueviolet;
+}
+.p1-section3 {
+  padding-top: 60px;
+  font-size: 23px;
+}
+.p1-section3 span {
+  color: blueviolet;
+}
+.p2-section3 {
+  font-size: 23px;
+  padding-top: 60px;
+}
+.p2-section3 span {
+  color: blueviolet;
+}
+.section-3-left img {
+  /* padding-left: 720px; */
+}
+.section-3 {
+  display: flex;
+  margin: 0 30px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.sign-up-btn {
+  padding: 20px 70px;
+  border-radius: 10px;
+  background-color: aqua;
+  color: black;
+  font-size: 20px !important;
+  margin-top: 60px;
+}

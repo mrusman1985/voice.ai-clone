@@ -25,3 +25,40 @@ nav {
 .nav-menu li {
   margin: 0 20px;
 }
+.hero {
+  background-image: linear-gradient(
+      0deg,
+      transparent 0,
+      transparent 59%,
+      rgba(0, 0, 0, 0.65)
+    ),
+    url(https://voice.ai/img/static/hp-waves.jpg);
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+h1 {
+  font-size: 100px;
+  text-align: center;
+  line-height: 110px;
+}
+.hero-heading {
+  font-size: 60px;
+  color: aqua;
+  font-weight: 400;
+}
+.hero-btn {
+  background-color: #7461ff;
+  padding: 20px 50px;
+  border-radius: 15px;
+  color: white;
+  font-size: 25px;
+  margin-top: 8px;
+}
+.green-wave {
+  background-image: url("./green_wave.png");
+  height: 500px;
+  position: absolute;
+}

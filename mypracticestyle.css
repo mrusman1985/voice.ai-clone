@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: quantico;
+  color: white;
+  background-color: black;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 40px;
+  height: 10vh;
+  margin-top: 40px;
+}
+.nav-bar {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+.nav-bar li {
+  margin: 0 20px;
+  font-size: 30px;
+}
+.hero {
+  display: flex;
+  height: 40vh;
+  position: relative;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.wave-container {
+  display: flex;
+  justify-content: space-between;
+}
+.purple-wave {
+}
+.purple-wave img {
+  position: relative;
+  right: 0;
+  bottom: 200px;
+  height: 300px;
+}
+.green-wave img {
+  height: 300px;
+  position: relative;
+  left: 0px;
+  bottom: 200px;
+}
+.green-wave {
+}
+h1 {
+  font-size: 160px;
+  text-align: center;
+  height: 80vh;
+  z-index: 5;
+  margin-top: 60px;
+}
+h2 {
+  font-size: 70px;
+  text-align: center;
+  padding-bottom: 50px;
+  z-index: 5;
+}
+button {
+  padding: 20px 80px;
+  margin: auto;
+  font-size: 30px;
+  border-radius: 10px;
+  color: white;
+  animation-name: buttonaimation;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  background-color: #8a2be2;
+  animation-timing-function: ease-in-out;
+  z-index: 1;
+}
+
+@keyframes buttonaimation {
+  0% {
+    padding: 20px 80px;
+  }
+  50% {
+    padding: 40px 130px;
+  }
+
+  100% {
+    padding: 20px 80px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .nav-bar li {
+    display: none;
+  }
+  .wave-container {
+    display: none;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  button {
+    font-size: 18px;
+  }
+  @keyframes buttonaimation {
+    0% {
+      padding: 10px 50px;
+    }
+    50% {
+      padding: 20px 70px;
+    }
+
+    100% {
+      padding: 10px 50px;
+    }
+  }
+}
+.image-for-middle-section {
+  display: flex;
+  height: 450px;
+  width: 650px;
+  padding-left: 187px;
+  padding-top: 465px;
+}
+.middle-section {
+  display: flex;
+}
+.middle-section-heading {
+  padding-left: 436px;
+  padding-top: 440px;
+}
+.middle-section-text {
+  padding-top: 1200px;
+  padding-right: 500px;
+  font-size: 50px;
+}
+span.special {
+  color: #8a2be2;
+}
